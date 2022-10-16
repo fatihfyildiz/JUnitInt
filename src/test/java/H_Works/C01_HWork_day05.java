@@ -64,7 +64,6 @@ public class C01_HWork_day05 {
         System.out.println(resultsNumber.getText()); // About 161 000 000 results (0,48 seconds)
 
         //7- test as the numbers of results are whether more than 10 million or not
-        // sonuc sayisinin 10 milyon’dan fazla oldugunu test edin
         String resultsStr= resultsNumber.getText();
         resultsStr= resultsStr.substring(resultsStr.indexOf(" ")+1,resultsStr.indexOf("results")-1);
         // with this, we ignore and get rid of the letters and only the numbers are left such as 161 000 000
