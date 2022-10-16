@@ -29,7 +29,6 @@ public class C02_Before_After {
 
         driver.get("https://www.amazon.com");
         System.out.println(driver.getTitle());
-
     }
 
     @Test
@@ -37,7 +36,6 @@ public class C02_Before_After {
 
         driver.get("https://www.facebook.com");
         System.out.println(driver.getTitle());
-
     }
 
     @Test
