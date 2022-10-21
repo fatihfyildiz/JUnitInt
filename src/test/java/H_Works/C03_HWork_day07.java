@@ -117,6 +117,6 @@ public class C03_HWork_day07 {
 
     @After
     public void teardown(){
-        // driver.close();
+        driver.close();
     }
 }
