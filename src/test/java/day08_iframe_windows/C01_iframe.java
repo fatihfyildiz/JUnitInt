@@ -66,12 +66,12 @@ public class C01_iframe {
         // ○ Text Box’a “Merhaba Dunya!” yazin.
         /*
          ulasilmak istenen web element bir iframe icerisindeyse driver o web element'e dogrudan ulasamaz ve
-         once o webelement'in icinde oldugu iframe'e geci yapmamiz gerekir...
+         once o WebElement'in icinde oldugu iframe'e gecis yapmamiz gerekir...
 
          Bir iframe'e gecis icin o iframe'nin
             - index
             - name veya id attribute'nin degeri
-            - webelement olarak lcoate edilen obje
+            - webelement olarak locate edilen obje
          seceneklerinden birisi ile switchTo().frame() method'u kullanilir
         */
         WebElement iframeElementi= driver.findElement(By.xpath("//iframe[@id='mce_0_ifr']"));
