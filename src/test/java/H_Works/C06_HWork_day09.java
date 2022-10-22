@@ -38,13 +38,13 @@ public class C06_HWork_day09 extends TestBase {
         wait(2);
 
         //7-“Click and hold” kutusunda cikan yaziyi yazdirin
-        System.out.println(clickAndHoldBox.getText()); // Click and Hold!
+        System.out.println(clickAndHoldBox.getText()); // Well done! keep holding that click now.....
 
         //8- “Double click me” butonunu cift tiklayin
         WebElement doubleClickMeBox= driver.findElement(By.xpath("//div[@id='double-click']"));
         actions.doubleClick(doubleClickMeBox).perform();
 
-        wait(2);
+        wait(4);
 
     }
 
