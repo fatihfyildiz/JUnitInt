@@ -22,8 +22,15 @@ public class TestBase {
 
     @After
     public void teardown(){
+        // driver.close();
+    }
 
-        driver.close();
+    public static void wait(int secondToWait){
+        try {
+            Thread.sleep(secondToWait*1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
 }
