@@ -21,7 +21,7 @@ public class C10_AssertSolution extends TestBase {
         loginButton.click();
         wait(2);
 
-        // 4. Write an email adress without @ sign inti the Email box
+        // 4. Write an email adress without @ into the email box
         WebElement mailSection= driver.findElement(By.xpath("(//input[@type='text'])[2]"));
         mailSection.sendKeys("fatih2gmail.com"+ Keys.ENTER);
         wait(2);
@@ -35,10 +35,9 @@ public class C10_AssertSolution extends TestBase {
         /*
         Or alternatively, we can also solve by follows:
 
-        String expectedText= "Invalid email address";
+        String expectedText= "Invalid email address.";
         String actualText= invalidEmail.getText();
         Assert.assertEquals(expectedText,actualText);
          */
-
     }
 }
