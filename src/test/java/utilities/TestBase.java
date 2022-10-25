@@ -22,7 +22,7 @@ public class TestBase {
 
     @After
     public void teardown(){
-        driver.close();
+        // driver.close();
     }
 
     public static void wait(int secondToWait){
