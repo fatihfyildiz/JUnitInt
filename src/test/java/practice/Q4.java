@@ -24,7 +24,7 @@ public class Q4 extends TestBase {
   String expectedTitle= "Automation Exercise";
   assertEquals(expectedTitle,driver.getTitle()); // Assert kismini sildik ve sonra da Import ettik...
 
-  String ilkSayfaWindowHandleDegeri= driver.getWindowHandle();
+  // String ilkSayfaWindowHandleDegeri= driver.getWindowHandle();
 
   //4. Click on 'Contact Us' button
   driver.findElement(By.xpath("//a[text()=' Contact us']")).click();
@@ -51,6 +51,7 @@ public class Q4 extends TestBase {
   WebElement subject= driver.findElement(By.xpath("(//input[@type='text'])[2]"));
   subject.sendKeys("Test");
   wait(1);
+
   WebElement message= driver.findElement(By.id("message"));
   message.sendKeys("Hello, test is passed");
 
