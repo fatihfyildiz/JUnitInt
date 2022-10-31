@@ -124,6 +124,7 @@ public class C13_AutomationExercise1 extends TestBase {
 
         //14. Verify that 'ACCOUNT CREATED!' is visible
         WebElement accountCrt=driver.findElement(By.xpath("//*[text()='Account Created!']"));
+        assertTrue(accountCrt.isDisplayed());
 
         //15. Click 'Continue' button
         driver.findElement(By.xpath("//a[@data-qa='continue-button']")).click();
