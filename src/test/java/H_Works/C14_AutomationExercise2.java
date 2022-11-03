@@ -54,6 +54,7 @@ public class C14_AutomationExercise2 extends TestBase {
 
         //10. Verify that 'ACCOUNT DELETED!' is visible
         WebElement deleted=driver.findElement(By.xpath("//*[text()='Account Deleted!']"));
+
         assertTrue(deleted.isDisplayed());
 
     }
