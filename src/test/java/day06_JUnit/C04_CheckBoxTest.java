@@ -31,11 +31,14 @@ public class C04_CheckBoxTest {
         //  a. Verilen web sayfasına gidin.
         //       https://the-internet.herokuapp.com/checkboxes
         driver.get("https://the-internet.herokuapp.com/checkboxes");
+
         //  b. Checkbox1 ve checkbox2 elementlerini locate edin.
         WebElement checkBox1 = driver.findElement(By.xpath("(//input[@type='checkbox'])[1]"));
         WebElement checkBox2 = driver.findElement(By.xpath("(//input[@type='checkbox'])[2]"));
+
         //  c. Checkbox1'in secili olmadigini ve
         //     Checkbox2'nin secili oldugunu test edin
+
         if (checkBox1.isSelected()){
             System.out.println("Checkbox1 secili, test FAILED");
         }else{

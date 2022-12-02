@@ -54,7 +54,7 @@ public class C03_handleWindows {
         Assert.assertTrue(actualTitle.contains(expectedTitle));
 
         /*
-            driver.switchTo().newWindow() method'u ile yen ibir sayfa olusturup
+            driver.switchTo().newWindow() method'u ile yeni bir sayfa olusturup
             driver'i o sayfaya switch ederiz...
 
             bu gecis, driver uzerinden yapildigi icin driver da yeni sayfaya gecer ve

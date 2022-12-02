@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import utilities.TestBase;
 
-import static org.junit.Assert.*; // burada * isaretinin yeridne assertEquals vardi * yaparak hepsini Import ettik...
+import static org.junit.Assert.*; // burada * isaretinin yerinde assertEquals vardi * yaparak hepsini Import ettik...
 
 public class Q4 extends TestBase {
 
