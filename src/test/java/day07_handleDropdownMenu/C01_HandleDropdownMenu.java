@@ -53,7 +53,7 @@ public class C01_HandleDropdownMenu {
         WebElement aramaSonucElementi= driver.findElement(By.xpath("//div[@class='a-section a-spacing-small a-spacing-top-small']"));
         String aramaSonucStr=aramaSonucElementi.getText();
 
-        // System.out.println(aramaSonucStr); // 1-24 of 127 results for "Java"
+        // System.out.println(aramaSonucStr); // 1-24 of 313 results for "Java"
         int indexOfOf=aramaSonucStr.indexOf("of");
         int indexOfResults=aramaSonucStr.indexOf("results");
         int aramaSonucSayisiInt= Integer

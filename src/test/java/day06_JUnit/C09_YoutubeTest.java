@@ -33,6 +33,7 @@ public class C09_YoutubeTest {
     public void titleTest(){
         driver.get("https://www.youtube.com");
         driver.findElement(By.xpath("//yt-formatted-string[text()='Accept all']")).click();
+
         // ○ titleTest    => Sayfa başlığının “YouTube” oldugunu test edin
         String expectedTitle="YouTube";
         String actualTitle= driver.getTitle();
@@ -42,6 +43,7 @@ public class C09_YoutubeTest {
     public void imageTesti(){
         //○ imageTest     => YouTube resminin görüntülendiğini (isDisplayed()) test edin
         driver.get("https://www.youtube.com");
+
         //driver.findElement(By.xpath("//yt-formatted-string[text()='Accept all']")).click();
         WebElement youtubeLogo= driver.findElement(By.xpath("(//yt-icon[@id='logo-icon'])[1]"));
         Assert.assertTrue(youtubeLogo.isDisplayed());
@@ -50,6 +52,7 @@ public class C09_YoutubeTest {
     public void aramaKutusuTesti(){
         //○ Search Box 'in erisilebilir oldugunu test edin (isEnabled())
         driver.get("https://www.youtube.com");
+
         //driver.findElement(By.xpath("//yt-formatted-string[text()='Accept all']")).click();
         WebElement aramaKutusu= driver.findElement(By.xpath("//input[@id='search']"));
         Assert.assertTrue(aramaKutusu.isEnabled());
@@ -58,6 +61,7 @@ public class C09_YoutubeTest {
     public void negatifTitleTest(){
         driver.get("https://www.youtube.com");
         //driver.findElement(By.xpath("//yt-formatted-string[text()='Accept all']")).click();
+
         // ○ titleTest    => Sayfa başlığının “youTube” olmadigini test edin
         String expectedYanlisTitle="youTube";
         String actualTitle= driver.getTitle();

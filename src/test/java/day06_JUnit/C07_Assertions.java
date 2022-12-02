@@ -11,9 +11,11 @@ public class C07_Assertions {
     /*
     JUnit de Assert class'indaki hazir method'lar gerceklesen sonuclarin
     beklentilerimize uygun olup olmadigini kontrol eder
+
     expected result ile actual result ayni ise test PASSED
     expected result ile actual result farkli ise test FAILED
-    genel olarak ifade etmek istersek
+
+    Genel olarak ifade etmek istersek
     test cumlesi olumlu ise assertTrue
     test cumlesi olumsuz ise assertFalse tercih edilir
     Assertion'nin failed oldugu satirda kodlarin calismasi durur
