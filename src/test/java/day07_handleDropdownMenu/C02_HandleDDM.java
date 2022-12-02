@@ -36,7 +36,7 @@ public class C02_HandleDDM {
         WebElement dropdownElement= driver.findElement(By.id("searchDropdownBox"));
         Select select= new Select(dropdownElement);
 
-        List<WebElement> optionListesi= select.getOptions(); // webelementlerden olusan bir liste döndürür
+        List<WebElement> optionListesi= select.getOptions(); // web elementlerden olusan bir liste döndürür
 
         // tum option'lari yazdiralim
         for (WebElement eachWebElement: optionListesi
@@ -44,8 +44,11 @@ public class C02_HandleDDM {
             System.out.println(eachWebElement.getText());
         }
 
+        System.out.println("DDM'deki option sayisi : " + optionListesi.size());
+
         // arama kutusunun solundaki DDM'deki option sayisinin 27 oldugunu test edin
         Assert.assertEquals(27,optionListesi.size());
+
     }
 
     @After
