@@ -26,7 +26,6 @@ public class C05_KeyboardActions extends TestBase {
         // amazon ana sayfaya gidin
         driver.get("https://www.amazon.com");
 
-
         // ve arama kutusuna nutella yazdirin
         WebElement searchBox= driver.findElement(By.id("twotabsearchtextbox"));
         searchBox.sendKeys("nutella");
@@ -45,9 +44,9 @@ public class C05_KeyboardActions extends TestBase {
         wait(2);
 
         actions.click(searchBox2)
-                .keyDown(Keys.SHIFT).sendKeys("s")
-                .keyUp(Keys.SHIFT).sendKeys("amsung")
-                .keyDown(Keys.SHIFT).sendKeys("a")
+                .keyDown(Keys.SHIFT).sendKeys("s") // Buyuk harfle S yazdırmıs olduk
+                .keyUp(Keys.SHIFT).sendKeys("amsung") // Shift tusunu basmayi biraktik UP ile dolayisiyla kucuk harfle yazdik
+                .keyDown(Keys.SHIFT).sendKeys("a") // Buyuk harfle A yazdırmıs olduk
                 .keyUp(Keys.SHIFT).sendKeys("71")
                 .sendKeys(Keys.ENTER)
                 .perform();
