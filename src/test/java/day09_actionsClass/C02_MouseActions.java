@@ -20,6 +20,7 @@ public class C02_MouseActions extends TestBase {
 
         //3- Cizili alan uzerinde sag click yapalim
         WebElement ciziliAlan= driver.findElement(By.xpath("//div[@id='hot-spot']"));
+
         Actions actions= new Actions(driver);
         actions.contextClick(ciziliAlan).perform();
         Thread.sleep(4000);
@@ -28,6 +29,7 @@ public class C02_MouseActions extends TestBase {
         //   test edelim.
         String expectedAlertYazisi= "You selected a context menu";
         String actualAlertYazisi= driver.switchTo().alert().getText();
+
         Assert.assertEquals(expectedAlertYazisi,actualAlertYazisi);
 
         //5- Tamam diyerek alert’i kapatalim
