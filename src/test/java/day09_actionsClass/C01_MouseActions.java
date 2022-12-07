@@ -34,6 +34,7 @@ public class C01_MouseActions extends TestBase {
 
         // Create a link'ini tiklayin
         WebElement accountListElement= driver.findElement(By.xpath("//*[text()='Account & Lists']"));
+
         actions.moveToElement(accountListElement).perform(); // ==> her actions sonrasi perform mutlaka gerekir
         Thread.sleep(3000);
 
