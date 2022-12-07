@@ -28,6 +28,7 @@ public class C03_DrugAndDrop extends TestBase {
 
         // 3- “Drop here” yazisi yerine “Dropped!” oldugunu test edin
         WebElement droppedYaziElementi= driver.findElement(By.xpath("//p[text()='Dropped!']"));
+
         String expectedDroppedYazisi= "Dropped!";
         String actualDroppedYazisi= droppedYaziElementi.getText();
 
