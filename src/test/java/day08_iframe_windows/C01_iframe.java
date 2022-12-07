@@ -24,7 +24,7 @@ public class C01_iframe {
 
     /*
     ulasilmak istenen web element bir iframe icerisindeyse driver o web element'e dogrudan ulasamaz ve
-    once o webelement'in icinde oldugu iframe'e geci yapmamiz gerekir...
+    once o webelement'in icinde oldugu iframe'e gecis yapmamiz gerekir...
 
     Bir iframe'e gecis icin o iframe'nin
             - index
@@ -79,6 +79,7 @@ public class C01_iframe {
 
         WebElement yaziAlaniElementi= driver.findElement(By.xpath("//body[@id='tinymce']"));
         Thread.sleep(1000); // sometimes codes work faster than the speed of internet which leads to unclean, thus we put sleep
+
         yaziAlaniElementi.clear();
         yaziAlaniElementi.sendKeys("Merhaba Dunya!");
         Thread.sleep(3000);
