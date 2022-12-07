@@ -96,6 +96,7 @@ public class C03_handleWindows {
         o sayfanin window handle degerini onceden KAYDETMELISINIZ
          */
         driver.switchTo().window(ilkSayfaHandleDegeri);
+
         expectedTitle= "Amazon";
         actualTitle= driver.getTitle();
 

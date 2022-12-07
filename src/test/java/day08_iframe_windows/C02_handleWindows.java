@@ -34,6 +34,7 @@ public class C02_handleWindows {
     public void windowtesti(){
         // https://the-internet.herokuapp.com/iframe adresine gidin
         driver.get("https://the-internet.herokuapp.com/iframe");
+
         String ilkSayfaWindowHandleDegeri= driver.getWindowHandle();
 
         // elemental selenium linkini tiklayin
@@ -41,6 +42,7 @@ public class C02_handleWindows {
 
         /*
         Bir link'e tikladiginizda driver'i acilan yeni Window'a dogrudan switch yapamayiz...
+
         Oncelikle o sayfanin window handle degerini bulmus olmali ve o degeri kaydetmeliyiz
         sonra da o degeri kullanarak yeni sayfaya gecmeliyiz...
          */
@@ -68,13 +70,15 @@ public class C02_handleWindows {
         }
 
         driver.switchTo().window(ikinciSayfaWindowHandleDegeri);
+
         // acilan sayfada en bastaki yazinin gorunur oldugunu test edin
-        WebElement baslikElementi= driver.findElement(By.tagName("h1")); // yeni bir sayfa acildigi icin error verdi
+        WebElement baslikElementi= driver.findElement(By.tagName("h1"));
         Assert.assertTrue(baslikElementi.isDisplayed());
 
-        // ve bu acilan sayfadaki yaziin Elemental Selenium oldugunu test edin
+        // ve bu acilan sayfadaki yazinin Elemental Selenium oldugunu test edin
         String expectedYazi= "Elemental Selenium";
         String actualYazi= baslikElementi.getText();
+
         Assert.assertEquals(expectedYazi,actualYazi);
 
     }
