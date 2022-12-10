@@ -75,7 +75,7 @@ public class C05_Senkronizasyon {
         once o web elementi locate etmemiz gerekir
         ancak bu soruda oldugu gibi
         bekledigimiz element henuz ortada yok iken locate edemeyiz,
-        locate edemedigimiz bir elementi beklemsini de driver'a soyleyemeyiz
+        locate edemedigimiz bir elementi beklemesini de driver'a soyleyemeyiz
 
         Bu nedenle, bu tur problemlerde web element olusturma, bekleme ve locate, ucunu bir arada yapilir
          */

@@ -28,12 +28,12 @@ public class C04_Senkronizasyon {
      2- implicitlyWait(max. bekleme suresi) ==> Selenium'dan gelir
         dinamiktir, yani gorev odaklidir
         her adimda max.sure beklemek yerine, gorevin gerceklesecegi sure kadar bekler
-        max. sure kadar beklemedigi (sadece gorev gerceklesilincye kadar bekledigi) icin
+        max. sure kadar beklemedigi (sadece gorev gerceklesilinceye kadar bekledigi) icin
         fazladan zaman harcanmasinin onune geceer...
 
         implicitlyWait tum class'i kapsar ve tum class'taki herbir locate vb. islem icn dinamik bekleme suresi saglar
 
-        ancak, mx. bekleme suresi doldugu halde gorev gerceklesmemis olursa ==> hata verir...
+        ancak, max. bekleme suresi doldugu halde gorev gerceklesmemis olursa ==> hata verir...
         bu nedenle ne cok uzun, ne de cok kisa sure belirlenmesi tercih edilmez
         optimum bir max bekleme suresi belirlenmelidir
 
