@@ -13,6 +13,7 @@ public class C01_Cookies extends TestBase {
     public void test01(){
 
         driver.get("https://www.youtube.com/");
+
         driver.findElement(By.xpath("//*[text()='Accept all']")).click(); // cookies -- Accept all
 
         Set<Cookie> cookiesSet= driver.manage().getCookies();
@@ -25,6 +26,7 @@ public class C01_Cookies extends TestBase {
         System.out.println("======================");
 
         Cookie cookie= new Cookie("best cookies is", "my cookie");
+
         driver.manage().addCookie(cookie);
 
         cookiesSet= driver.manage().getCookies();
