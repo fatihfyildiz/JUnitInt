@@ -14,7 +14,7 @@ public class C01_WriteExcel {
     @Test
     public void writeExcelTest() throws IOException {
 
-        // 1) Yeni bir Class olusturalim WriteExcel
+        //1) Yeni bir Class olusturalim WriteExcel
         //2) Yeni bir test method olusturalim writeExcelTest()
 
         //3) Adimlari takip ederek 1.satira kadar gidelim
