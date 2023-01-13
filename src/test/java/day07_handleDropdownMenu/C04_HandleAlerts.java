@@ -96,6 +96,7 @@ public class C04_HandleAlerts {
 
         // uyarıdaki metin kutusuna isminizi yazin,
         driver.switchTo().alert().sendKeys("Professor");
+
         Thread.sleep(2000);
 
         // OK butonuna  tıklayın ve

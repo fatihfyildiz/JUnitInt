@@ -1,4 +1,4 @@
-package day13_excel_screenshot_jsExecutor;
+package day10_file_waits.day13_excel_screenshot_jsExecutor;
 
 import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
@@ -9,7 +9,7 @@ import utilities.TestBase;
 import java.io.File;
 import java.io.IOException;
 
-public class C02_ScreenshotTumSayfa extends TestBase {
+public class C04_ScreenshotWebelement extends TestBase {
 
     @Test
     public void test01() throws IOException {
@@ -30,19 +30,16 @@ public class C02_ScreenshotTumSayfa extends TestBase {
 
         Assert.assertTrue(actualWord.contains(expectedWord));
 
-        // Tum sayfanin screenshot'ini almak icin 4 adim gerekiyor:
-        // 1- TakesScreenshot objesi olusturup deger olarak cast ettigimiz driver'i atayalim
+        // sadece sonuc yazisi elementinin (resultsElement) screen shot'unu cekelim
+        // 1.adim screenshot yapacagimiz web elementi locate edelim
+        // 2, 3 ve 4ncu adimlar yine ayni
 
-        TakesScreenshot tss= (TakesScreenshot)driver;
+        File webElementScreenshot= new File("target/Screenshot/webElementScreenShotlar.jpeg");
 
-        // 2- Resmi kaydedecegimiz bir dosya olusturulur
-        File tumSayfaScreenshot= new File("target/Screenshot/tumSayfaScreenShotlar.jpeg");
+        File geciciResim= resultsElement.getScreenshotAs(OutputType.FILE);
 
-        // 3- screenshot objesi kullanarak fotografi cekip gecici dosyaya kaydedelim
-        File geciciResim= tss.getScreenshotAs(OutputType.FILE);
-
-        // 4- gecici dosyayi, hazirladigimiz file'a kopyalayalim
-        FileUtils.copyFile(geciciResim,tumSayfaScreenshot);
+        FileUtils.copyFile(geciciResim,webElementScreenshot);
 
     }
+
 }
