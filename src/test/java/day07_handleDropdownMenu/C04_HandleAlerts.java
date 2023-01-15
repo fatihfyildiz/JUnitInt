@@ -91,6 +91,7 @@ public class C04_HandleAlerts {
     public void sendKeysTest() throws InterruptedException {
         // 3. butona tıklayın,
         driver.get("https://the-internet.herokuapp.com/javascript_alerts");
+
         driver.findElement(By.xpath("//*[text()='Click for JS Prompt']")).click();
         Thread.sleep(2000);
 
