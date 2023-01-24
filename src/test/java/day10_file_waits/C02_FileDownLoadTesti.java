@@ -24,6 +24,7 @@ public class C02_FileDownLoadTesti extends TestBase {
         wait(5);
 
         String dosyaYolu= "C:\\Users\\ffyil\\Downloads\\logo.png";
+
         Assert.assertTrue(Files.exists(Paths.get(dosyaYolu)));
 
     }
