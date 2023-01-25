@@ -25,6 +25,7 @@ public class C03_WebTables extends TestBase {
         // tum tablo body'sini yazdirin
 
         WebElement tableBody= driver.findElement(By.xpath("//table//tbody"));
+
         System.out.println(tableBody.getText());
 
         // tum tablo body'sinde care kelimesinin gecmedigini test edin
