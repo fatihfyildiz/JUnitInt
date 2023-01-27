@@ -36,6 +36,7 @@ public class C01_MouseActions extends TestBase {
         WebElement accountListElement= driver.findElement(By.xpath("//*[text()='Account & Lists']"));
 
         actions.moveToElement(accountListElement).perform(); // ==> her actions sonrasi perform mutlaka gerekir
+
         Thread.sleep(3000);
 
         driver.findElement(By.xpath("//span[text()='Create a List']")).click();
